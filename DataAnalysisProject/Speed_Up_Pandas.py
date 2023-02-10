@@ -52,5 +52,3 @@ df.loc[((df['pct_sleeping']>0.5) & (df['time_in_bed']>5)) | (df['age']>90),'rewa
 end_time_level_3=time.time()
 level_3_time = end_time_level_3-start_time_level_3
 print('This is the level 3 time: '+ str(level_3_time))
-
-
