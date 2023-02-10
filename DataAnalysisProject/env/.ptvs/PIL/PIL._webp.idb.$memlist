@@ -1,0 +1,16 @@
+HAVE_TRANSPARENCY
+HAVE_WEBPANIM
+HAVE_WEBPMUX
+WebPAnimDecoder
+WebPAnimEncoder
+WebPDecode
+WebPDecoderBuggyAlpha
+WebPDecoderVersion
+WebPEncode
+__doc__
+__file__
+__loader__
+__name__
+__package__
+__spec__
+webpdecoder_version

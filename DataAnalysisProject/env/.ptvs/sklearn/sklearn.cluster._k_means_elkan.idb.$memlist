@@ -1,0 +1,16 @@
+CHUNK_SIZE
+__builtins__
+__doc__
+__file__
+__loader__
+__name__
+__package__
+__pyx_unpickle_Enum
+__spec__
+__test__
+elkan_iter_chunked_dense
+elkan_iter_chunked_sparse
+init_bounds_dense
+init_bounds_sparse
+np
+row_norms

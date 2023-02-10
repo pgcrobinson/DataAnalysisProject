@@ -4,13 +4,14 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>a0944a3e-40ca-48f9-b397-9a6a845d8f5b</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>DataAnalysisProject.py</StartupFile>
+    <StartupFile>Speed_Up_Pandas.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>DataAnalysisProject</Name>
     <RootNamespace>DataAnalysisProject</RootNamespace>
+    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,7 +22,51 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="AddDataToSQLServer.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BeautifulSoup.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CustomerSegmentationAdventureWorks.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="DataAnalysisProject.py" />
+    <Compile Include="CustomerSegmentation.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GenderPredictionKmeans.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="joining_dataframes.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="KnearestneighbourAdventureWorks.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="KnearestNeighbours.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PythonCrashCourseAPI.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Speed_Up_Pandas.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Time_Python_Code.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env\">
+      <Id>env</Id>
+      <Version>3.6</Version>
+      <Description>env (Python 3.6 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
